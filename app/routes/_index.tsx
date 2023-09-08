@@ -10,7 +10,7 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div>
       <h1 className="text-2xl p-4">Café</h1>
       <OrderForm />
     </div>

@@ -50,7 +50,7 @@ export function ErrorBoundary() {
   if (isRouteErrorResponse(error)) {
     return (
       <PageWrapper>
-        <h1>Something went wrong</h1>
+        <h1 className="text-2xl p-4">Something went wrong</h1>
         <p>Status: {error.status}</p>
         <p>{error.data.message}</p>
       </PageWrapper>
@@ -66,7 +66,7 @@ export function ErrorBoundary() {
 
   return (
     <PageWrapper>
-      <h1>Uh oh ...</h1>
+      <h1 className="text-2xl p-4">Uh oh ...</h1>
       <p>Something went wrong.</p>
       <pre>{errorMessage}</pre>
     </PageWrapper>

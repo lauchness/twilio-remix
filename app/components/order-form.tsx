@@ -16,8 +16,6 @@ export const OrderForm: FC<OrderFormProps> = ({}) => {
     }
   }, [fetcher]);
 
-  console.log(fetcher.data);
-
   const message =
     typeof fetcher.data !== "undefined"
       ? fetcher.data?.success

@@ -36,7 +36,7 @@ export async function action({ request }: ActionArgs) {
         message: `Order: "${order}" is invalid`,
         order: "",
       },
-      { status: 401 }
+      { status: 400 }
     );
   }
 
